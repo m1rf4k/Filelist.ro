@@ -38,7 +38,7 @@ class Filelist(MovieProvider, TorrentProvider):
             'passkey': self.conf('passkey'),
             'action': 'search-torrents',
             'type': 'imdb',
-            'query': getIdentifier(media),
+            'query': getIdentifier(media).replace("tt0", "tt"),
             'category': cat_id,
         })
 
